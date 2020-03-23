@@ -5,6 +5,9 @@ SMADatabaseSystem is a system provide local database, control screens and search
 ## Tech Stack
 
 Flask
+
 Python
+
 MongoDB
+
 WindowsVM
