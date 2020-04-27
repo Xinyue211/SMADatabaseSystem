@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-Tags-Input.css">
+    <link rel="stylesheet" href="assets/css/Dynamic-Table.css">
+    <link rel="stylesheet" href="assets/css/input.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#" style="opacity: 1;background-color: rgb(78,115,223);color: rgb(255,255,255);">Current DB</a></li>
+                            <li class="nav-item" role="presentation"></li>
+                            <li class="nav-item" role="presentation"></li>
+                        </ul>
+                        <ul class="nav navbar-nav text-right flex-nowrap ml-auto">
+                            <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                                    <form class="form-inline mr-auto navbar-search w-100">
+                                        <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                            <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation"></li>
+                            <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                            </li>
+                            <div class="d-none d-sm-block topbar-divider"></div>
+                            <li class="nav-item dropdown no-arrow" role="presentation"></li>
+                        </ul><a class="nav-link active" href="controlpage.html"><i class="fas fa-table"></i><span>Control Page</span></a><a class="nav-link active" href="workpage.html"><i class="fas fa-table"></i><span>WorkPage</span></a><a href="#"></a><a class="nav-link disabled" href="exportpage.html"><i class="fas fa-table"></i><span>Export Page</span></a></div>
+                </nav>
+                <div class="row">
+                    <div class="col" style="padding: 15;">
+                        <div class="card shadow border-left-primary py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col-xl-10 offset-xl-1 mr-2">
+                                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>Current Tweets</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span>3,000,000</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card shadow border-left-primary py-2">
+                            <div class="card-body">
+                                <div class="row align-items-center no-gutters">
+                                    <div class="col mr-2">
+                                        <div class="text-uppercase text-primary font-weight-bold text-xs mb-1"><span>Current Size</span></div>
+                                        <div class="text-dark font-weight-bold h5 mb-0"><span>1.25G</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="card"></div>
+                </div>
+            </div>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <div class="container-fluid">
+        <div class="row row-cols-2"><div class="col-md-3">
+    <div class="card shadow">
+        <div class="card-body" style="  height: 900px;
+  width: 200px;
+">
+            <div class="table-responsive table mt-2" id="dataTable">
+                <table class="table dataTable my-0" id="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Dataset</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Election data set</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="col">
+                <div class="row row-cols-2">
+                    <div class="col align-self-center">
+                        <form>
+                            <div class="form-check"><input class="form-check-input flex-grow-0" type="checkbox" id="formCheck-1"><label class="form-check-label flex-grow-0" for="formCheck-1">Time</label></div>
+    <form class="date-select">
+        <div class="form-group">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend"><span class="input-group-text">From</span></div><input class="form-control" type="text" id="datePickerFrom" /></div>
+        </div>
+        <div class="form-group">
+            <div class="input-group mb-4">
+                <div class="input-group-prepend"><span class="input-group-text">To     </span></div><input class="form-control" type="text" id="datePickerTo" /></div>
+        </div>
+    </form>
+</form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Language</label></div><div>
+
+<div class="input-group mb-3 edtFormMarg">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+</div></div>
+                    <div class="col align-self-center">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Actor Type</label></div><div>
+
+<div class="input-group mb-3 edtFormMarg">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+</div></div>
+                </div>
+                <div class="row">
+                    <div class="col align-self-center">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Country</label></div><div>
+
+<div class="input-group mb-3 edtFormMarg">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+</div></div>
+                    <div class="col align-self-center">
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2">State</label></div><div>
+
+<div class="input-group mb-3 edtFormMarg">
+  <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+  </div>
+  <select class="custom-select" id="inputGroupSelect01">
+    <option selected>Choose...</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</div>
+
+</div></div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="field"><label class="mb-0" for="float-input"><input type="checkbox">&nbsp; Retweet Count</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">More than</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">Less than</label></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="field"><label class="mb-0" for="float-input"><input type="checkbox">&nbsp; Reply Count</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">More than</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">Less than</label></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="field"><label class="mb-0" for="float-input"><input type="checkbox">&nbsp; Quote Count</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">More than</label></div>
+                        </form>
+                        <form>
+                            <div class="field"><input class="form-control" type="text" id="float-input" name="float-input" style="border: 0; border-bottom: 1px solid #E0E0E0;" placeholder=" "><label class="mb-0" for="float-input">Less than</label></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><label class="col-form-label mb-0" for="float-input"><input type="checkbox">&nbsp; Hashtag</label></div>
+                </div><div class="dynamic-table">
+    <div class="row clearfix">
+		<div class="col-md-12 column">
+			<table class="table table-bordered table-hover dynamic-table-tab_logic">
+				<thead>
+					<tr>
+<!-- 						<th class="text-center">
+							
+						</th> -->
+					</tr>
+				</thead>
+				<tbody>
+					<tr class='dynamic-table-addr0' style='display:none;'>
+						<td>
+						<input type="text" name='Hashtags'  placeholder='Name' class="form-control"/>
+						</td>
+					</tr>
+                    <tr class='dynamic-table-addr1'></tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<a class="dynamic-table-add_row btn btn-default pull-left">Add Row</a><a class='dynamic-table-delete_row pull-right btn btn-default'>Delete Row</a>
+</div></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Bootstrap-Tags-Input-1.js"></script>
+    <script src="assets/js/Bootstrap-Tags-Input.js"></script>
+    <script src="assets/js/Dynamic-Table.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

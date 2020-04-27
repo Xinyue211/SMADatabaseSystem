@@ -16,6 +16,14 @@ mongo = PyMongo(app)
 def show_data_list():
     return render_template('tweet_list.html', data_list=tweet.get_all(mongo.db))
 
+@app.route('/')
+def home_page():
+    print("visit home page!")
+    return render_template('/index.html', uploaded='false')
+    #test mongodb connection and queries here
+    #file = open('datasnippet.json',"r", encoding='utf-8')
+    #mongo.save_file('datasnippet.json',fileobj=file)
+    return 0
 
 @app.route('/upload_gzip')
 def upload_gzip():
