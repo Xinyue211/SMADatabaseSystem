@@ -1,0 +1,26 @@
+ZYX: upload check
+		boolean uploadZipFile 
+		boolean uploadJsonFile
+		String[] getDatasets()
+
+MYZ: JSON file instance
+		File getJsonFile()
+		[File] getZipJsonFile()
+
+LY:  File directory/JSON object
+		String getDatasetMetaData()
+		boolean userAuthentication()
+ 
+GSS: Login 
+        boolean userAuthentication()
+        File getJsonFile(String filename)
+        String[] getDatasets()
+
+YR: 
+		void TwitterJsonInput(Tweet []tweets, String dataset)
+		Tweet getTweetObject(String dataset)
+		String[] getDatasets()	
+		String getDatasetMetaData()	
+
+
+
